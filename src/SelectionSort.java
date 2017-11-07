@@ -3,6 +3,7 @@ public class SelectionSort {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             int minIndex = i;
+            // 寻找[i,n)区间里最小值的索引
             for (int j = i+1; j < n; j++) {
                 if (arr[j].compareTo(arr[minIndex])<0) {
                     minIndex = j;
